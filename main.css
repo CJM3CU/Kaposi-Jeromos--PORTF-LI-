@@ -1,0 +1,226 @@
+/*---alap_dolgok--*/
+	body{
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size: 25px;
+		font-weight: 450;
+
+		display: grid;
+		grid-template-areas:
+			"fejlec"
+			"kontent"
+			"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 95vh;
+	}
+
+	*, *::before, *::after{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	header{
+		grid-area: fejlec;
+	}
+
+	main{
+		grid-area: kontent;
+	}
+
+	footer{
+		grid-area: lablec;
+	}
+/*---alap_dolgok_end--*/
+
+/*--kezdőlaphoz--*/
+	#kezdőoldal{
+		text-align: center;
+		display: grid;
+		grid-template-rows: minmax(1rem,1fr) max-content minmax(1rem,1fr);
+	    grid-template-columns: minmax(1rem,1fr) minmax(300px, 700px) minmax(1rem,1fr);
+	}
+
+	#kezdőoldal hr{
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	#kezdőoldal div{
+	    display: block;
+	    grid-column: 2/3;
+	    grid-row: 2/3;
+	}
+
+	div.menü a{
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		padding-right: 1rem;
+		padding-left: 2rem;
+		color: black;
+		text-decoration: none;
+	}
+	div.menü a:hover{
+		color: blue;
+	}
+/*--kezdőlaphoz_end--*/
+
+/*--bemutatkozáshoz--*/
+	.bemutatkozas{
+		text-align: left;
+		display: grid;
+		grid-template-rows: minmax(1rem,1fr) max-content minmax(1rem,1fr);
+	    grid-template-columns:1fr 1fr 1fr;
+	}
+	.menü2{
+		text-align: center;
+	}
+
+	.bemutatkozas hr{
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.bemutatkozas div{
+	    display: inline-block;
+	    grid-column: 2/3;
+	    grid-row: 2/3;
+	}
+	.menü2 a{
+		text-align: center;
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-top: 2rem;
+		padding-right: 1rem;
+		padding-left: 2rem;
+		color: black;
+		text-decoration: none;
+	}
+	div.menü2 a:hover{
+		color: blue;
+	}
+	/*img{
+		max-width: 50%;
+	}
+	img:hover{
+		cursor: pointer;
+		-webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+ 		-moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+ 		box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+	}*/
+/*--bemutatkozáshoz_end--*/
+
+/*--kapcsolat--*/
+	.kapcsolat{
+		text-align: left;
+		display: grid;
+		grid-template-rows: minmax(1rem,1fr) max-content minmax(1rem,1fr);
+	    grid-template-columns:1fr 1fr 1fr;
+	}
+	.menü2{
+		text-align: center;
+	}
+
+	.kapcsolat hr{
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.kapcsolat div{
+	    display: inline-block;
+	    grid-column: 2/3;
+	    grid-row: 2/3;
+	}
+	.menü2 a{
+		text-align: center;
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-top: 2rem;
+		padding-right: 1rem;
+		padding-left: 2rem;
+		color: black;
+		text-decoration: none;
+	}
+	div.menü2 a:hover{
+		color: blue;
+	}
+	img:hover{
+		cursor: pointer;
+		-webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+ 		-moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+ 		box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+	}
+	.kep1{
+		display: grid;
+		margin: 0;
+		width: 47%;
+	}
+	.rozsomak{
+		display: grid;
+		margin: 0;
+		width: 49%;
+	}
+
+/*--kapcsolat_end--*/
+
+/*--leírás--*/
+	.leiras{
+		text-align: left;
+		display: grid;
+		grid-template-rows: minmax(1rem,1fr) max-content minmax(1rem,1fr);
+	    grid-template-columns:1fr 1fr 1fr;
+	}
+	.menü2{
+		text-align: center;
+	}
+
+	.leiras hr{
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.leiras div{
+	    display: inline-block;
+	    grid-column: 2/3;
+	    grid-row: 2/3;
+	}
+	.menü2 a{
+		text-align: center;
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-top: 2rem;
+		padding-right: 1rem;
+		padding-left: 2rem;
+		color: black;
+		text-decoration: none;
+	}
+	div.menü2 a:hover{
+		color: blue;
+	}
+	img:hover{
+		cursor: pointer;
+		-webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+ 		-moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+ 		box-shadow: 0px 2px 12px 0px rgba(0,0,0,.3);
+	}
+	.kep1{
+		display: grid;
+		margin: 0;
+		width: 47%;
+	}
+	.rozsomak{
+		display: grid;
+		margin: 0;
+		width: 49%;
+	}
+	a#itt{
+		color: black;
+		text-decoration: none;
+	}
+	a#itt:hover{
+		color: blue;
+	}
+/*--leírás_end--*/
